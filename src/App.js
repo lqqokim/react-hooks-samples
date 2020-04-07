@@ -1,38 +1,21 @@
 import React from 'react';
+import { useInput } from './hooks/useInput';
 
-class App extends React.Component {
-  state = {
-    item: 1
-  };
 
-  render() {
-    const { item } = this.state;
+const App = () => {
+  // 입력값이 10보다 크면 값이 입력되지 않는다.
+  const maxLen = value => value.length <= 10;
+  // 입력값에 @가 있으면 입력되지 않는다.
+  const checkAtSign = value => !value.includes('@');
 
-    return (
-      <div className="App">
-        <h1>Hello {item}</h1>
-        <h2>Start editing to see some magic happen!</h2>
-        <button onClick={this.incrementItem}>Increment</button>
-        <button onClick={this.decrementItem}>Decrement</button>
-      </div>
-    )
-  }
+  const name = useInput("Mr.", checkAtSign);
 
-  incrementItem = () => {
-    this.setState(state => {
-      return {
-        item: state.item + 1
-      }
-    })
-  };
-
-  decrementItem = () => {
-    this.setState(state => {
-      return {
-        item: state.item - 1
-      }
-    })
-  };
+  return (
+    <div className="App">
+      <h1>Hello</h1>
+      <input placeholder="Name" {...name} />
+    </div>
+  )
 }
 
 export default App;

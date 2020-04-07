@@ -1,12 +1,12 @@
 # react-hooks-samples
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 1 useState
+## 1. useState
  - useState
  - useInput
  - useTabs
  
-## 2 useEffect
+## 2. useEffect
  - useEffect
  - useTitle
  - useClick

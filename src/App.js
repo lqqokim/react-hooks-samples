@@ -1,38 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-class App extends React.Component {
-  state = {
-    item: 1
-  };
+const content = [
+  {
+    tab: 'Section 1',
+    content: 'Section 1 tab area'
+  }, {
+    tab: 'Section 2',
+    content: 'Section 2 tab area'
+  }
+];
 
-  render() {
-    const { item } = this.state;
+const useTabs = (initialTab, allTabs) => {
+  const [currentIndex, setCurrentIndex] = useState(initialTab);
 
-    return (
-      <div className="App">
-        <h1>Hello {item}</h1>
-        <h2>Start editing to see some magic happen!</h2>
-        <button onClick={this.incrementItem}>Increment</button>
-        <button onClick={this.decrementItem}>Decrement</button>
-      </div>
-    )
+  if (!allTabs || !Array.isArray(allTabs)) {
+    return null;
   }
 
-  incrementItem = () => {
-    this.setState(state => {
-      return {
-        item: state.item + 1
-      }
-    })
-  };
+  return {
+    currentItem: allTabs[currentIndex],
+    changeItem: setCurrentIndex
+  }
+}
 
-  decrementItem = () => {
-    this.setState(state => {
-      return {
-        item: state.item - 1
-      }
-    })
-  };
+const App = () => {
+  const { currentItem, changeItem } = useTabs(0, content);
+
+  return (
+    <div className="App">
+      {content.map((section, index) => (
+        <button onClick={() => changeItem(index)} key={index}>
+          {section.tab}
+        </button>
+      ))}
+      <div>{currentItem.content}</div>
+    </div>
+  )
 }
 
 export default App;

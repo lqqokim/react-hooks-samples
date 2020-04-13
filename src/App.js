@@ -1,38 +1,12 @@
 import React from 'react';
+import Routes from './Routes';
 
-class App extends React.Component {
-  state = {
-    item: 1
-  };
-
-  render() {
-    const { item } = this.state;
-
-    return (
-      <div className="App">
-        <h1>Hello {item}</h1>
-        <h2>Start editing to see some magic happen!</h2>
-        <button onClick={this.incrementItem}>Increment</button>
-        <button onClick={this.decrementItem}>Decrement</button>
-      </div>
-    )
-  }
-
-  incrementItem = () => {
-    this.setState(state => {
-      return {
-        item: state.item + 1
-      }
-    })
-  };
-
-  decrementItem = () => {
-    this.setState(state => {
-      return {
-        item: state.item - 1
-      }
-    })
-  };
+const App = () => {
+  return (
+    <div>
+      <Routes />
+    </div>
+  );
 }
 
 export default App;

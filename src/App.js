@@ -1,38 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-class App extends React.Component {
-  state = {
-    item: 1
-  };
+const App = () => {
+  const sayHello = () => console.log('hello');
+  const [number, setNumber] = useState(0);
+  const [anumber, setANumber] = useState(0);
 
-  render() {
-    const { item } = this.state;
+  // useEffect: componentDidMount, componentWillUnMount, componentDidUpdate
+  useEffect(sayHello, [number]);
 
-    return (
-      <div className="App">
-        <h1>Hello {item}</h1>
-        <h2>Start editing to see some magic happen!</h2>
-        <button onClick={this.incrementItem}>Increment</button>
-        <button onClick={this.decrementItem}>Decrement</button>
-      </div>
-    )
-  }
-
-  incrementItem = () => {
-    this.setState(state => {
-      return {
-        item: state.item + 1
-      }
-    })
-  };
-
-  decrementItem = () => {
-    this.setState(state => {
-      return {
-        item: state.item - 1
-      }
-    })
-  };
+  return (
+    <div className="App">
+      <div>Hi</div>
+      <button onClick={() => setNumber(number + 1)}>{number}</button>
+      <button onClick={() => setANumber(anumber + 1)}>{anumber}</button>
+    </div>
+  )
 }
 
 export default App;

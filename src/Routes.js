@@ -9,6 +9,7 @@ import { useTabs } from './components/hooks/useTabs';
 import { useEffect } from './components/hooks/useEffect';
 import { useTitle } from './components/hooks/useTitle';
 import { useClick } from './components/hooks/useClick';
+import { useConfirm } from './components/hooks/useConfirm';
  
 const Routes = () => {
     return (
@@ -22,6 +23,7 @@ const Routes = () => {
                 <Route path="/useEffect" component={useEffect} />
                 <Route path="/useTitle" component={useTitle} />
                 <Route path="/useClick" component={useClick} />
+                <Route path="/useConfirm" component={useConfirm} />
             </div>
         </Router>
     )

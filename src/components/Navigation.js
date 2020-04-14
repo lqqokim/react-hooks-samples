@@ -26,6 +26,9 @@ const Navigation = () => {
             <li>
                 <Link to="/useClick">useClick</Link>
             </li>
+            <li>
+                <Link to="/useConfirm">useConfirm</Link>
+            </li>
         </ul>
     )
 }

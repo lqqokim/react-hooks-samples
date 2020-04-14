@@ -8,6 +8,7 @@ import { useInput } from './components/hooks/useInput';
 import { useTabs } from './components/hooks/useTabs';
 import { useEffect } from './components/hooks/useEffect';
 import { useTitle } from './components/hooks/useTitle';
+import { useClick } from './components/hooks/useClick';
  
 const Routes = () => {
     return (
@@ -20,6 +21,7 @@ const Routes = () => {
                 <Route path="/useTabs" component={useTabs} />
                 <Route path="/useEffect" component={useEffect} />
                 <Route path="/useTitle" component={useTitle} />
+                <Route path="/useClick" component={useClick} />
             </div>
         </Router>
     )

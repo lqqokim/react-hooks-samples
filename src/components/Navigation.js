@@ -23,6 +23,9 @@ const Navigation = () => {
             <li>
                 <Link to="/useTitle">useTitle</Link>
             </li>
+            <li>
+                <Link to="/useClick">useClick</Link>
+            </li>
         </ul>
     )
 }

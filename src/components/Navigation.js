@@ -29,6 +29,9 @@ const Navigation = () => {
             <li>
                 <Link to="/useConfirm">useConfirm</Link>
             </li>
+            <li>
+                <Link to="/usePreventLeave">usePreventLeave</Link>
+            </li>
         </ul>
     )
 }

@@ -10,7 +10,8 @@ import { useEffect } from './components/hooks/useEffect';
 import { useTitle } from './components/hooks/useTitle';
 import { useClick } from './components/hooks/useClick';
 import { useConfirm } from './components/hooks/useConfirm';
- 
+import { usePreventLeave } from './components/hooks/usePreventLeave';
+
 const Routes = () => {
     return (
         <Router>
@@ -24,6 +25,7 @@ const Routes = () => {
                 <Route path="/useTitle" component={useTitle} />
                 <Route path="/useClick" component={useClick} />
                 <Route path="/useConfirm" component={useConfirm} />
+                <Route path="/usePreventLeave" component={usePreventLeave} />
             </div>
         </Router>
     )

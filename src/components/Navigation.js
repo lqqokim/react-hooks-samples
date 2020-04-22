@@ -47,6 +47,12 @@ const Navigation = () => {
             <li>
                 <Link to="/useFullScreen">useFullScreen</Link>
             </li>
+            <li>
+                <Link to="/useNotification">useNotification</Link>
+            </li>
+            <li>
+                <Link to="/useAxios">useAxios</Link>
+            </li>
         </ul>
     )
 }

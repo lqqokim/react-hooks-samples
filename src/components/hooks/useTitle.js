@@ -25,7 +25,7 @@ const Init = () => {
         <div className="App">
             <div>
                 Hi
-      </div>
+            </div>
         </div>
     )
 }

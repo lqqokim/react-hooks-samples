@@ -16,6 +16,8 @@ import { useFadeIn } from './components/hooks/useFadeIn';
 import { useNetwork } from './components/hooks/useNetwork';
 import { useScroll } from './components/hooks/useScroll';
 import { useFullScreen } from './components/hooks/useFullScreen';
+import { useNotification } from './components/hooks/useNotification';
+import { useAxios } from './components/hooks/useAxios';
 
 const Routes = () => {
     return (
@@ -36,6 +38,8 @@ const Routes = () => {
                 <Route path="/useNetwork" component={useNetwork} />
                 <Route path="/useScroll" component={useScroll} />
                 <Route path="/useFullScreen" component={useFullScreen} />
+                <Route path="/useNotification" component={useNotification} />
+                <Route path="/useAxios" component={useAxios} />
             </div>
         </Router>
     )

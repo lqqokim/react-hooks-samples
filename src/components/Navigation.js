@@ -38,6 +38,9 @@ const Navigation = () => {
             <li>
                 <Link to="/useFadeIn">useFadeIn</Link>
             </li>
+            <li>
+                <Link to="/useNetwork">useNetwork</Link>
+            </li>
         </ul>
     )
 }

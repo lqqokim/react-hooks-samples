@@ -14,6 +14,8 @@ import { usePreventLeave } from './components/hooks/usePreventLeave';
 import { useBeforeLeave } from './components/hooks/useBeforeLeave';
 import { useFadeIn } from './components/hooks/useFadeIn';
 import { useNetwork } from './components/hooks/useNetwork';
+import { useScroll } from './components/hooks/useScroll';
+import { useFullScreen } from './components/hooks/useFullScreen';
 
 const Routes = () => {
     return (
@@ -32,6 +34,8 @@ const Routes = () => {
                 <Route path="/useBeforeLeave" component={useBeforeLeave} />
                 <Route path="/useFadeIn" component={useFadeIn} />
                 <Route path="/useNetwork" component={useNetwork} />
+                <Route path="/useScroll" component={useScroll} />
+                <Route path="/useFullScreen" component={useFullScreen} />
             </div>
         </Router>
     )

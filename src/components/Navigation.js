@@ -8,7 +8,7 @@ const Navigation = () => {
             <li>
                 <Link className="active" to="/">Home</Link>
             </li>
-            <li>
+            <li style={{background: 'gray'}}>
                 <Link to="/useState">useState</Link>
             </li>
             <li>
@@ -17,7 +17,7 @@ const Navigation = () => {
             <li>
                 <Link to="/useTabs">useTabs</Link>
             </li>
-            <li>
+            <li style={{background: 'gray'}}>
                 <Link to="/useEffect">useEffect</Link>
             </li>
             <li>
@@ -40,6 +40,12 @@ const Navigation = () => {
             </li>
             <li>
                 <Link to="/useNetwork">useNetwork</Link>
+            </li>
+            <li>
+                <Link to="/useScroll">useScroll</Link>
+            </li>
+            <li>
+                <Link to="/useFullScreen">useFullScreen</Link>
             </li>
         </ul>
     )

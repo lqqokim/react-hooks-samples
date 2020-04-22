@@ -11,6 +11,7 @@ import { useTitle } from './components/hooks/useTitle';
 import { useClick } from './components/hooks/useClick';
 import { useConfirm } from './components/hooks/useConfirm';
 import { usePreventLeave } from './components/hooks/usePreventLeave';
+import { useBeforeLeave } from './components/hooks/useBeforeLeave';
 
 const Routes = () => {
     return (
@@ -26,6 +27,7 @@ const Routes = () => {
                 <Route path="/useClick" component={useClick} />
                 <Route path="/useConfirm" component={useConfirm} />
                 <Route path="/usePreventLeave" component={usePreventLeave} />
+                <Route path="/useBeforeLeave" component={useBeforeLeave} />
             </div>
         </Router>
     )

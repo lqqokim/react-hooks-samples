@@ -32,6 +32,9 @@ const Navigation = () => {
             <li>
                 <Link to="/usePreventLeave">usePreventLeave</Link>
             </li>
+            <li>
+                <Link to="/useBeforeLeave">useBeforeLeave</Link>
+            </li>
         </ul>
     )
 }

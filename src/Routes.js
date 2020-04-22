@@ -12,6 +12,7 @@ import { useClick } from './components/hooks/useClick';
 import { useConfirm } from './components/hooks/useConfirm';
 import { usePreventLeave } from './components/hooks/usePreventLeave';
 import { useBeforeLeave } from './components/hooks/useBeforeLeave';
+import { useFadeIn } from './components/hooks/useFadeIn';
 
 const Routes = () => {
     return (
@@ -28,6 +29,7 @@ const Routes = () => {
                 <Route path="/useConfirm" component={useConfirm} />
                 <Route path="/usePreventLeave" component={usePreventLeave} />
                 <Route path="/useBeforeLeave" component={useBeforeLeave} />
+                <Route path="/useFadeIn" component={useFadeIn} />
             </div>
         </Router>
     )

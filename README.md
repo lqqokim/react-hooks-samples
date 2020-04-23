@@ -1,5 +1,5 @@
 # React Hooks Samples
-<img src="image.png" width="500" height="300" />
+![image](/image.png)
 
 
 # 1. useState
